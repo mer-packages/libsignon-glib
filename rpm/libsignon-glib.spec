@@ -55,7 +55,7 @@ Group: Documentation
 %{_datadir}/gtk-doc/html/libsignon-glib/*
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{version}/libsignon-glib
 
 %build
 %reconfigure
