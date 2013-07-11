@@ -44,17 +44,6 @@ Requires: pkgconfig(signond)
 %{_includedir}/libsignon-glib/*.h
 %{_libdir}/pkgconfig/libsignon-glib.pc
 
-%package docs
-Summary: Documentation for libsignon-glib
-Group: Documentation
-
-%description docs
-%{summary}
-
-%files docs
-%defattr(-,root,root,-)
-%{_datadir}/gtk-doc/html/libsignon-glib/*
-
 %prep
 %setup -q -n %{name}-%{version}/libsignon-glib
 
