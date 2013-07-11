@@ -15,6 +15,7 @@ BuildRequires: pkgconfig(gobject-2.0)
 BuildRequires: pkgconfig(signond)
 BuildRequires: pkgconfig(check)
 BuildRequires: python
+BuildRequires: libtool
 # For signond
 Requires: libsignon
 
