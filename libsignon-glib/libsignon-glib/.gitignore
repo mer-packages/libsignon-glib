@@ -1,0 +1,3 @@
+*-glib-gen.h
+*-enum-types.[ch]
+signon-errors-enum.c
