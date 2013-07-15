@@ -12,12 +12,13 @@ BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: pkgconfig(gio-unix-2.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gobject-2.0)
-BuildRequires: pkgconfig(signond)
+# FIX: when mer is fixed to not have signond in qt4 pkgconfig(signond)
+BuildRequires: signon-qt5-devel
 BuildRequires: pkgconfig(check)
 BuildRequires: python
 BuildRequires: libtool
 # For signond
-Requires: libsignon
+Requires: signon-qt5
 
 %description
 %{summary}.
@@ -33,7 +34,8 @@ Summary: Development files for libsignon-glib
 Group: Development/Libraries
 Requires: %{name} = %{version}-%{release}
 # signond.pc, required by libsignon-glib.pc
-Requires: pkgconfig(signond)
+# FIX: when mer is fixed to not have signond in qt4 pkgconfig(signond)
+BuildRequires: signon-qt5-devel
 
 %description devel
 %{summary}
