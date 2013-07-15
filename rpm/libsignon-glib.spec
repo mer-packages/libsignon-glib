@@ -35,7 +35,7 @@ Group: Development/Libraries
 Requires: %{name} = %{version}-%{release}
 # signond.pc, required by libsignon-glib.pc
 # FIX: when mer is fixed to not have signond in qt4 pkgconfig(signond)
-BuildRequires: signon-qt5-devel
+Requires: signon-qt5-devel
 
 %description devel
 %{summary}
