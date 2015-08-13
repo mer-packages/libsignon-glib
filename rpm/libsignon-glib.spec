@@ -4,8 +4,8 @@ Release: 1
 Summary: GLib wrapper for single signon framework
 Group: System/Libraries
 License: LGPLv2.1
-URL: http://code.google.com/p/accounts-sso/
-Source0: http://accounts-sso.googlecode.com/files/libsignon-glib-%{version}.tar.gz
+URL: https://gitlab.com/groups/accounts-sso
+Source0: %{name}-%{version}.tar.gz
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires: pkgconfig(gio-2.0)
